@@ -45,8 +45,6 @@ import org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher;
 import org.bouncycastle.crypto.params.KeyParameter;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
-import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
-
 /**
  * @author sandrob
  * Utility to test encryption of data in sandrobView
@@ -137,7 +135,7 @@ public class ExportImport {
     private static void actionCrypt() throws Exception {
         // get pfx file
         BufferedInputStream in = new BufferedInputStream(new FileInputStream(params.get("filename")));
-        ByteOutputStream byteStream = new ByteOutputStream(); 
+        ByteArrayOutputStream byteStream = new ByteArrayOutputStream(); 
         byte[] data = new byte[4096];
         int numByteRead = in.read(data);
         while (numByteRead > 0){
@@ -145,7 +143,7 @@ public class ExportImport {
             numByteRead = in.read(data);
         }
         // encrypt
-        byte[] encodedByteArray = encryptAes(byteStream.getBytes(), params.get("password"));
+        byte[] encodedByteArray = encryptAes(byteStream.toByteArray(), params.get("password"));
         // make db connection
         Connection conn = makeDbConnection();
         
