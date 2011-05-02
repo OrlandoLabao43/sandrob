@@ -22,10 +22,10 @@ package org.sandrob.KeyStoreUtils;
  * Just to simulate android logger
  */
 public class Log {
-	public static void e(String TAG, String msg){
-		System.out.println("Error: " + msg);
-	}
-	public static void d(String TAG, String msg){
-		System.out.println("Debug:" + msg);
-	}
+    public static void e(String TAG, String msg){
+        System.out.println("Error: " + msg);
+    }
+    public static void d(String TAG, String msg){
+        System.out.println("Debug:" + msg);
+    }
 }
