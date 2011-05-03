@@ -276,7 +276,7 @@ public class ExportImport {
         // String stringPreSalt = byteArr2HexStr(bytePreSalt);
         String stringPreSalt = params.get("salt");
         
-        Log.e(TAG, "PreSalt as hex String" + stringPreSalt);
+        Log.d(TAG, "PreSalt as hex String:" + stringPreSalt);
         streamSalt.write(stringDeviceId.getBytes(CryptEncoding));
         streamSalt.write(str2Bytes(stringPreSalt));
         return streamSalt.toByteArray();
