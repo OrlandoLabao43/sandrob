@@ -10,7 +10,11 @@ Every process has access to external storage.
 = Details =
 
 *SandroB* offer option to store certificate locally in his own database.
-On input form is a check-box *local store*. 
+
+On input form is a check-box *local store*.
+http://code.google.com/p/sandrob/source/browse/wiki/cert_only_from_file.png
+
+ 
 If checked certificate will be imported to database.
 If unchecked on previous stored certificate, certificate will be deleted from database.
 
