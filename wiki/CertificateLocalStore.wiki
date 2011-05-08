@@ -23,4 +23,5 @@ http://code.google.com/p/sandrob/downloads/detail?name=sandrob_demo_1_0_0_10.apk
 http://code.google.com/p/sandrob/source/browse/misc/KeyStoreUtils/src/org/sandrob/KeyStoreUtils/ExportImport.java
 
 In addition to sqlite tables that comes with native browser, two more tables are added.
+
 One to store ssl url info data and one to store certificate data.
