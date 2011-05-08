@@ -17,6 +17,7 @@ If checked certificate will be imported to database.
 If unchecked on previous stored certificate, certificate will be deleted from database.
 
 Store is encrypted with symmetric key which is generated from device id, user password and some random pre-generated salt.
+After 3 failed attempts certificate is delete from the store.
 
 There is some demonstration to test/check implementation:
 
