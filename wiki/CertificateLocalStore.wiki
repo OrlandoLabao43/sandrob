@@ -12,8 +12,6 @@ Every process has access to external storage.
 *SandroB* offer option to store certificate locally in his own database.
 
 On input form is a check-box *local store*.
-[image cert_only_from_file.png]
-
  
 If checked certificate will be imported to database.
 If unchecked on previous stored certificate, certificate will be deleted from database.
